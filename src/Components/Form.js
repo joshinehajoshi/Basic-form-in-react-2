@@ -14,6 +14,14 @@ function Form() {
          setValues({...values, firstName: event.target.value})
      }
 
+     const lastNameHandle = (event) => {
+         setValues({...values, lastName:event.target.value})
+     }
+
+     const emailHandle = (event) => {
+         setValues({...values, email: event.target.value})
+     }
+
     return (
         <div className="form-wrapper">
             <form>
@@ -29,12 +37,14 @@ function Form() {
             className="field-form"
             placeholder="Last Name"
             value={values.lastName}
+            onChange={lastNameHandle}
             /><br />
             <span className="span-field">Please enter Last Name</span><br />
               <input 
             className="field-form"
             placeholder="Email"
             value={values.email}
+            onChange={emailHandle}
             /><br />
             <span className="span-field">Please enter Email</span><br />
              <input 

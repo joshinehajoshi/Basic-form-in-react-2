@@ -30,12 +30,12 @@ function Form() {
              <input 
             className="field-form"
             placeholder="Phone Number"
-            value={values.email}
+            value={values.phoneNumber}
             /><br />
              <input 
             className="field-form"
             placeholder="City"
-            value={values.email}
+            value={values.city}
             /><br />
             <button>Submit</button>
             </form>

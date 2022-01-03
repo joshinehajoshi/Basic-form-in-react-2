@@ -22,6 +22,14 @@ function Form() {
          setValues({...values, email: event.target.value})
      }
 
+     const phoneNumberHandle = (event) => {
+         setValues({...values, phoneNumber: event.target.value})
+     }
+
+     const cityHandle = (event) => {
+         setValues({...values, city: event.target.value})
+     }
+
     return (
         <div className="form-wrapper">
             <form>
@@ -51,12 +59,14 @@ function Form() {
             className="field-form"
             placeholder="Phone Number"
             value={values.phoneNumber}
+            onChange={phoneNumberHandle}
             /><br />
             <span className="span-field">Please enter Phone Number</span><br />
              <input 
             className="field-form"
             placeholder="City"
             value={values.city}
+            onChange={cityHandle}
             /><br />
             <span className="span-field">Please enter City</span><br />
             <button

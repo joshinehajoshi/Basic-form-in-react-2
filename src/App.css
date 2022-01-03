@@ -38,8 +38,18 @@ justify-content: center;
 .form-wrapper {
 background-color: aliceblue;
 margin-top: 12rem;
+border-radius: 10px;
 }
 
 body {
   background-color: black;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-heading {
+  margin-bottom: 0px;
 }

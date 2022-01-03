@@ -49,7 +49,7 @@ function Form() {
             <form 
             onSubmit={submitHandle}>
                 <h2 className="form-heading">Register Form </h2>
-                {submitted && valid ? <h3>Success!!</h3> : null}
+                {submitted && valid ? <h3 className="success-message">Success!!</h3> : null}
             <input 
             className="field-form"
             placeholder="First Name"

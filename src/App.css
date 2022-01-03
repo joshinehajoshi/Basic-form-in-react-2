@@ -53,3 +53,8 @@ body {
 .form-heading {
   margin-bottom: 0px;
 }
+
+.success-message {
+  background: aquamarine;
+  padding: 10px;
+}

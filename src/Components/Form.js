@@ -5,7 +5,8 @@ function Form() {
          firstName: "",
          lastName: "",
          email: "",
-
+         phoneNumber: "",
+         city: ""
      })
 
     return (
@@ -26,6 +27,17 @@ function Form() {
             placeholder="Email"
             value={values.email}
             /><br />
+             <input 
+            className="field-form"
+            placeholder="Phone Number"
+            value={values.email}
+            /><br />
+             <input 
+            className="field-form"
+            placeholder="City"
+            value={values.email}
+            /><br />
+            <button>Submit</button>
             </form>
             
         </div>

@@ -10,6 +10,8 @@ function Form() {
          city: ""
      })
 
+     const [valid, setValid] = useState(false);
+
      const firstNameHandle = (event) => {
          setValues({...values, firstName: event.target.value})
      }
@@ -30,9 +32,18 @@ function Form() {
          setValues({...values, city: event.target.value})
      }
 
+     const submitHandle = (event) => {
+        event.preventDefault()
+        if(values.firstName, values.lastName, values.email, values.phoneNumber,  values.city){
+            setValid(true)
+        }
+
+
+     }
+
     return (
         <div className="form-wrapper">
-            <form>
+            <form onSubmit={submitHandle}>
                 <h2 className="form-heading">Register Form </h2>
             <input 
             className="field-form"

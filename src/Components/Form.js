@@ -13,6 +13,7 @@ function Form() {
     return (
         <div className="form-wrapper">
             <form>
+                <h2 className="form-heading">Register Form </h2>
             <input 
             className="field-form"
             placeholder="First Name"
@@ -44,8 +45,7 @@ function Form() {
             /><br />
             <span className="span-field">Please enter City</span><br />
             <button
-            className="field-form"
-            style={{width: 100}}
+            className="field-form submit-btn"
             >Submit</button>
             </form>
             

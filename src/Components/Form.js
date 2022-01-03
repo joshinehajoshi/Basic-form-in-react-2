@@ -63,28 +63,28 @@ function Form() {
             value={values.lastName}
             onChange={lastNameHandle}
             /><br />
-            <span className="span-field">Please enter Last Name</span><br />
+            {submitted && !values.lastName ? <span className="span-field">Please enter Last Name</span>: null }<br />
               <input 
             className="field-form"
             placeholder="Email"
             value={values.email}
             onChange={emailHandle}
             /><br />
-            <span className="span-field">Please enter Email</span><br />
+            {submitted && !values.email ? <span className="span-field">Please enter Email</span>: null}<br />
              <input 
             className="field-form"
             placeholder="Phone Number"
             value={values.phoneNumber}
             onChange={phoneNumberHandle}
             /><br />
-            <span className="span-field">Please enter Phone Number</span><br />
+            {submitted && !values.phoneNumber ?<span className="span-field">Please enter Phone Number</span>: null }<br />
              <input 
             className="field-form"
             placeholder="City"
             value={values.city}
             onChange={cityHandle}
             /><br />
-            <span className="span-field">Please enter City</span><br />
+            {submitted && !values.city ?<span className="span-field">Please enter City</span>: null}<br />
             <button
             className="field-form submit-btn"
             >Submit</button>

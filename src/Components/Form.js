@@ -34,9 +34,9 @@ function Form() {
      }
 
      const submitHandle = (event) => {
-        event.preventDefault()
+        event.preventDefault();
         if(values.firstName, values.lastName, values.email, values.phoneNumber,  values.city){
-            setValid(true)
+            setValid(true);
         }
 
         setSubmitted(true);
@@ -46,15 +46,17 @@ function Form() {
 
     return (
         <div className="form-wrapper">
-            <form >
+            <form 
+            onSubmit={submitHandle}>
                 <h2 className="form-heading">Register Form </h2>
+                {submitted && valid ? <h3>Success!!</h3> : null}
             <input 
             className="field-form"
             placeholder="First Name"
             value={values.firstName}
             onChange={firstNameHandle}
             /> <br />
-            <span className="span-field">Please enter First Name</span><br />
+            {submitted && !values.firstName ? <span className="span-field">Please enter First Name</span> : null}<br />
               <input 
             className="field-form"
             placeholder="Last Name"
@@ -85,7 +87,6 @@ function Form() {
             <span className="span-field">Please enter City</span><br />
             <button
             className="field-form submit-btn"
-            onSubmit={submitHandle}
             >Submit</button>
             </form>
             

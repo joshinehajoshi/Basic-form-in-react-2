@@ -10,6 +10,10 @@ function Form() {
          city: ""
      })
 
+     const firstNameHandle = (event) => {
+         setValues({...values, firstName: event.target.value})
+     }
+
     return (
         <div className="form-wrapper">
             <form>
@@ -18,6 +22,7 @@ function Form() {
             className="field-form"
             placeholder="First Name"
             value={values.firstName}
+            onChange={firstNameHandle}
             /> <br />
             <span className="span-field">Please enter First Name</span><br />
               <input 

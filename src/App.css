@@ -1,0 +1,45 @@
+.field-form {
+  margin-top: 1rem;
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.field-form:hover {
+  margin-top: 1rem;
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rosybrown;
+  color: white;
+}
+
+
+
+.span-field {
+  float: left;
+  color: red;
+}
+
+.form-wrapper {
+text-align: center;
+border: 2px solid black;
+width: 20%;
+display: flex;
+justify-content: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.form-wrapper {
+background-color: aliceblue;
+margin-top: 12rem;
+}
+
+body {
+  background-color: black;
+}

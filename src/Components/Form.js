@@ -10,6 +10,7 @@ function Form() {
          city: ""
      })
 
+     const [submitted, setSubmitted] = useState(false);
      const [valid, setValid] = useState(false);
 
      const firstNameHandle = (event) => {
@@ -38,12 +39,14 @@ function Form() {
             setValid(true)
         }
 
+        setSubmitted(true);
+
 
      }
 
     return (
         <div className="form-wrapper">
-            <form onSubmit={submitHandle}>
+            <form >
                 <h2 className="form-heading">Register Form </h2>
             <input 
             className="field-form"
@@ -82,6 +85,7 @@ function Form() {
             <span className="span-field">Please enter City</span><br />
             <button
             className="field-form submit-btn"
+            onSubmit={submitHandle}
             >Submit</button>
             </form>
             

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import '../App.css';
 
 function Form() {
      const [values, setValues] = useState({
@@ -37,7 +38,9 @@ function Form() {
             placeholder="City"
             value={values.city}
             /><br />
-            <button>Submit</button>
+            <button
+            className="field-form"
+            >Submit</button>
             </form>
             
         </div>

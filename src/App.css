@@ -1,0 +1,16 @@
+.field-form {
+  background-color: aqua;
+}
+
+.form-wrapper {
+text-align: center;
+border: 2px solid black;
+width: 20%;
+display: flex;
+justify-content: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
